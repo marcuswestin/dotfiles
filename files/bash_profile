@@ -1,0 +1,9 @@
+PS1="[\w]$ "
+
+# MacPorts Installer addition on 2011-04-11_at_16:48:02: adding an appropriate PATH variable for use with MacPorts.
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+
+# Mysql, after installing dmg from http://dev.mysql.com/downloads/mysql/5.1.html
+alias mysql=/usr/local/mysql/bin/mysql
+alias mysqladmin=/usr/local/mysql/bin/mysqladmin
+
