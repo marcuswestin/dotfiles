@@ -21,6 +21,10 @@ let mapleader = ","
 " Make ack easier to access with ,a
 nnoremap <leader>a :!ack 
 
+" Toggles for soft tabs and hard tabs
+nnoremap <leader>s :set tabstop=2 softtabstop=2 expandtab
+nnoremap <leader>h :set tabstop=4 softtabstop=4 noexpandtab
+
 """""""""""""""""
 " CONFIGURATION "
 """""""""""""""""
