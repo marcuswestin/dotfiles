@@ -2,7 +2,7 @@
 
 var fs = require('fs'),
 	path = require('path'),
-	home = process.argv[2],
+	home = process.argv[2]
 
 
 var filesPath = path.join(__dirname, 'files')
