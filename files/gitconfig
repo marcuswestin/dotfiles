@@ -1,28 +1,28 @@
 [color]
 	branch = auto
-	diff   = auto
+	diff = auto
 	status = auto
-	ui     = true
+	ui = true
 
 [color "branch"]
 	current = yellow reverse
-	local   = yellow
-	remote  = green
+	local = yellow
+	remote = green
 
 [color "diff"]
 	meta = blue bold
 	frag = magenta bold
-	old  = red bold
-	new  = green
+	old = red bold
+	new = green
 
 [color "status"]
-	added     = yellow
-	changed   = green
+	added = yellow
+	changed = green
 	untracked = cyan
 
 [user]
-	name  = Marcus Westin
+	name = Marcus Westin
 	email = marcus.westin@gmail.com
 
 [core]
-	excludesfile = ~/.gitignore
+	excludesfile = /Users/marcus/.gitignore
