@@ -1,5 +1,5 @@
 My dotfiles :)
 ==============
 
-	make
+	make install
 
