@@ -18,4 +18,4 @@ export PATH=${PATH}:/usr/local/go/bin
 
 # Mine
 export PATH=${PATH}:~/code/marcuswestin/dotfiles/bin
-
+alias d="cd ~/code/dogo"
