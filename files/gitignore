@@ -4,3 +4,4 @@
 .DS_Store
 .bin
 node_modules
+.__npm_installed__
