@@ -1,0 +1,9 @@
+{
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"auto_indent":true,
+	"smart_indent":true,
+	"trim_automatic_white_space":false
+}
