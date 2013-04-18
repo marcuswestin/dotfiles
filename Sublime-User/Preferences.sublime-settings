@@ -4,6 +4,7 @@
 		"Vintage"
 	],
 	"auto_indent":true,
-	"smart_indent":true,
-	"trim_automatic_white_space":false
+	"smart_indent":false,
+	"trim_automatic_white_space":false,
+	"indent_subsequent_lines": true
 }
