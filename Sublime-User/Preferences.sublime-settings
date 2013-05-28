@@ -1,10 +1,12 @@
 {
+	"auto_indent": true,
+	"font_size": 14.0,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
-	"auto_indent":true,
-	"smart_indent":false,
-	"trim_automatic_white_space":false,
-	"indent_subsequent_lines": true
+	"indent_subsequent_lines": true,
+	"smart_indent": false,
+	"trim_automatic_white_space": false,
+	"use_simple_full_screen": true
 }
