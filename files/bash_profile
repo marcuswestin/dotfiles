@@ -20,4 +20,4 @@ export PATH=${PATH}:/usr/local/go/bin
 export PATH=${PATH}:~/code/marcuswestin/dotfiles/bin
 alias d="cd ~/code/dogo"
 alias glog="git log --format='%Cgreen%h%Creset %C(cyan)%an%Creset - %s' --graph"
-
+alias t="make test"
