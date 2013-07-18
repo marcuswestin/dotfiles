@@ -11,7 +11,7 @@ for (var i=0, file; file = files[i]; i++) {
 	if (file[0] == '.' || file == 'install.js' || file == 'Makefile') { continue }
 	var linkPath = path.join(home, '.' + file),
 		filePath = path.join(filesPath, file)
-	if (path.existsSync(linkPath)) {
+	if (fs.readlinkSync(linkPath)) {
 		var linkStat = fs.lstatSync(linkPath)
 		if (linkStat.isSymbolicLink()) {
 			fs.unlinkSync(linkPath)
@@ -29,7 +29,7 @@ for (var i=0, file; file = files[i]; i++) {
 	if (file[0] == '.' || file == 'install.js' || file == 'Makefile') { continue }
 	var linkPath = path.join(home, '.' + file),
 		filePath = path.join(filesPath, file)
-	if (path.existsSync(linkPath)) {
+	if (fs.readlinkSync(linkPath)) {
 		var linkStat = fs.lstatSync(linkPath)
 		if (linkStat.isSymbolicLink()) {
 			fs.unlinkSync(linkPath)
