@@ -2,7 +2,11 @@
 	"auto_upgrade_last_run": null,
 	"installed_packages":
 	[
-		"Markdown Preview",
+		"Character Table",
+		"Gist",
+		"GoSublime",
+		"LaTeX Word Count",
+		"Markdown Extended",
 		"nginx",
 		"Package Control",
 		"Stylus"
