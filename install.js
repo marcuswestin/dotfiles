@@ -10,32 +10,19 @@ var files = fs.readdirSync(filesPath)
 for (var i=0, file; file = files[i]; i++) {
 	if (file[0] == '.' || file == 'install.js' || file == 'Makefile') { continue }
 	var linkPath = path.join(home, '.' + file),
-		filePath = path.join(filesPath, file)
-	if (fs.readlinkSync(linkPath)) {
-		var linkStat = fs.lstatSync(linkPath)
-		if (linkStat.isSymbolicLink()) {
+		filePath = path.join(filesPath, file),
+		exists = false
+	try {
+		fs.readlinkSync(linkPath) // throws if nothing there
+		if (fs.lstatSync(linkPath).isSymbolicLink()) {
 			fs.unlinkSync(linkPath)
 		} else {
-			console.log(linkPath, 'already exists! Please remove it first. Skipping', file)
-			continue
+			console.log(linkPath, 'already exists! Please remove it. ('+file+')')
+			process.exit(-1)
 		}
-	}
-	console.log('.'+file+'!')
-	fs.symlinkSync(filePath, linkPath)
-}
-
-var files = fs.readdirSync(filesPath)
-for (var i=0, file; file = files[i]; i++) {
-	if (file[0] == '.' || file == 'install.js' || file == 'Makefile') { continue }
-	var linkPath = path.join(home, '.' + file),
-		filePath = path.join(filesPath, file)
-	if (fs.readlinkSync(linkPath)) {
-		var linkStat = fs.lstatSync(linkPath)
-		if (linkStat.isSymbolicLink()) {
-			fs.unlinkSync(linkPath)
-		} else {
-			console.log(linkPath, 'already exists! Please remove it first. Skipping', file)
-			continue
+	} catch(e) {
+		if (e.code != 'ENOENT' || e.errno != 34) {
+			// throw e
 		}
 	}
 	console.log('.'+file+'!')
