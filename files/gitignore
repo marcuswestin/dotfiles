@@ -1,7 +1,31 @@
-*~
-*.swp
+# OSX
 ._*
 .DS_Store
-.bin
+
+# XCode
+xcuserdata
+project.xcworkspace
+
+# Python
+*.pyc
+
+# Redis
+dump.rdb
+
+# Node
+node_modules
+
+# Go
+src/go/pkg
+src/go/bin
+src/go/src/github.com
+
+# Node.js
 node_modules
 .__npm_installed__
+
+# Misc
+build
+*~
+*.swp
+.bin
