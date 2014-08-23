@@ -2,7 +2,7 @@
 PS1="\n\w λ "
 
 # MacPorts Installer addition on 2011-04-11_at_16:48:02: adding an appropriate PATH variable for use with MacPorts.
-#export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
 # brew
 export PATH=/usr/local/bin:$PATH
