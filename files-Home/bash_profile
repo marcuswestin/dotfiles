@@ -13,20 +13,22 @@ export PATH=/usr/local/share/npm/bin:$PATH
 # mysql
 export PATH=/usr/local/mysql/bin:$PATH
 
-# Android
-export PATH=${PATH}:~/bin
-
 # Go
+mkdir -p ${HOME}/code/GOPATH-global
+export GOPATH=${HOME}/code/GOPATH-global
 export PATH=${PATH}:/usr/local/go/bin
+export PATH=${PATH}:${GOPATH}/bin
+# if this doesn't work long term:
+# "setenv GOPATH $HOME/code/GOPATH-global" in /etc/launchd.conf
 
 # Mine
 export PATH=${PATH}:~/code/marcuswestin/dotfiles/bin
-alias d="cd ~/code/dogo && GOPATH=pwd/src/go"
+alias d="cd ~/code/dogo && GOPATH=`pwd`/src/go"
 alias i="cd ~/code/ivyq"
 alias f="cd ~/code/dogo/src/go/src/github.com/marcuswestin/fun"
 alias s="cd ~/code/secrets"
 alias y="cd ~/code/secrets/diary"
-alias r="cd ~/code/surlei && GOPATH=pwd/go"
+alias r="cd ~/code/surlei && GOPATH=`pwd`/go"
 alias glog="git log --format='%Cgreen%h%Creset %C(cyan)%an%Creset - %s' --graph"
 alias t="make test"
 alias saga="subl ~/Dropbox/Saga.md"
