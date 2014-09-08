@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-check(err);
-${0}
-]]></content>
-	<tabTrigger>cher</tabTrigger>
-</snippet>
-

@@ -1,0 +1,82 @@
+"""""""""""""""""""""""""""
+" HARD CORE TRAINING MODE "
+"""""""""""""""""""""""""""
+
+"""""""""""""""""
+" COLOR SCHEMES "
+"""""""""""""""""
+syntax on
+colorscheme wombat
+"set background=dark
+"colorscheme solarized
+
+"""""""""""
+" LEADERS "
+"""""""""""
+
+" I like my leader key easily accesible - map it to ,
+"___________________________________________________
+let mapleader = ","
+
+" Make ack easier to access with ,a
+nnoremap <leader>a :!ack 
+
+" Toggles for soft tabs and hard tabs
+nnoremap <leader>s :set tabstop=2 softtabstop=2 expandtab
+nnoremap <leader>h :set tabstop=4 softtabstop=4 noexpandtab
+
+"""""""""""""""""
+" CONFIGURATION "
+"""""""""""""""""
+
+" restore the cursor to the same place it was last time you closed the file
+"__________________________________________________________________________
+set viminfo='10,\"100,:20,%,n~/.viminfo
+au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
+
+" Let ; do the same thing as : No need for shift!
+"________________________________________________
+nnoremap ; :
+
+" Infer indentation from the previous line when creating a new line
+"__________________________________________________________________
+set autoindent
+
+" No need to be vi compatible
+"____________________________
+set nocompatible
+
+" Plug that security hole!
+" http://lists.alioth.debian.org/pipermail/pkg-vim-maintainers/2007-June/004020.html
+"___________________________________________________________________________________
+set modelines=0
+
+" Consistant tabbing
+"___________________
+set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
+
+" Linewrap baby
+"______________
+set wrap
+
+" The right encoding
+"___________________
+set encoding=utf-8
+
+" Show command auto-completions in a menu
+"________________________________________
+set wildmenu
+
+" Visual bell is nicer than sound bell
+"_____________________________________
+set visualbell
+
+" Send characters quicker (for fast terminals)
+"_____________________________________________
+set ttyfast
+
+" Display line and column number of cursor position
+"__________________________________________________
+set ruler
+
+imap qq <Esc>

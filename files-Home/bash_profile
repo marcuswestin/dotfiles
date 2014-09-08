@@ -1,0 +1,32 @@
+#PS1="[\w] λ "
+PS1="\n\w λ "
+
+# MacPorts Installer addition on 2011-04-11_at_16:48:02: adding an appropriate PATH variable for use with MacPorts.
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+
+# brew
+export PATH=/usr/local/bin:$PATH
+
+# npm
+export PATH=/usr/local/share/npm/bin:$PATH
+
+# mysql
+export PATH=/usr/local/mysql/bin:$PATH
+
+# Android
+export PATH=${PATH}:~/bin
+
+# Go
+export PATH=${PATH}:/usr/local/go/bin
+
+# Mine
+export PATH=${PATH}:~/code/marcuswestin/dotfiles/bin
+alias d="cd ~/code/dogo && GOPATH=pwd/src/go"
+alias i="cd ~/code/ivyq"
+alias f="cd ~/code/dogo/src/go/src/github.com/marcuswestin/fun"
+alias s="cd ~/code/secrets"
+alias y="cd ~/code/secrets/diary"
+alias r="cd ~/code/surlei && GOPATH=pwd/go"
+alias glog="git log --format='%Cgreen%h%Creset %C(cyan)%an%Creset - %s' --graph"
+alias t="make test"
+alias saga="subl ~/Dropbox/Saga.md"
