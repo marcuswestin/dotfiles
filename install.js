@@ -17,16 +17,19 @@ function processDir(dirname, linkPrefix) {
 			fileStat = fs.statSync(filePath),
 			linkStat
 		
-		console.log('\t',linkPathHuman)
+		console.log('\t', linkPathHuman)
 		
 		try {
 			var linkStat = fs.statSync(linkPath) // throws if nothing there
 		} catch(e) {}
+
 		if (linkStat) {
-			if (linkStat.ino = fileStat.ino) {
-				fs.unlinkSync(linkPath)
+			if (linkStat.uid == fileStat.uid) {
+				try {
+					fs.unlinkSync(linkPath)
+				} catch(e) {}
 			} else {
-				console.log(linkPathHuman, 'already exists! Please remove it.')
+				console.log(linkPath, 'already exists! Please remove it.')
 				process.exit(-1)
 			}
 		}
