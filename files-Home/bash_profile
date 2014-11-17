@@ -14,10 +14,10 @@ export PATH=/usr/local/share/npm/bin:$PATH
 export PATH=/usr/local/mysql/bin:$PATH
 
 # Go
-mkdir -p ${HOME}/code/GOPATH-global
-export GOPATH=${HOME}/code/GOPATH-global
-export PATH=${PATH}:/usr/local/go/bin
+export GOPATH=${HOME}/code/asapp/go
 export PATH=${PATH}:${GOPATH}/bin
+export PATH=${PATH}:/usr/local/go/bin
+# mkdir -p ${HOME}/code/GOPATH-global
 # if this doesn't work long term:
 # "setenv GOPATH $HOME/code/GOPATH-global" in /etc/launchd.conf
 
