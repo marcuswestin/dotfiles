@@ -3,8 +3,8 @@
 	"font_size": 18.0,
 	"ignored_packages":
 	[
-		"Makefile",
-		"Vintage"
+		"Vintage",
+		"Makefile"
 	],
 	"indent_subsequent_lines": true,
 	"smart_indent": false,
