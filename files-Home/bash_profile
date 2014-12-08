@@ -4,22 +4,22 @@ PS1="\n\w λ "
 # MacPorts Installer addition on 2011-04-11_at_16:48:02: adding an appropriate PATH variable for use with MacPorts.
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
+# ASAPP
+# ASAPP Stuff
+#############
 # brew
 export PATH=/usr/local/bin:$PATH
-
-# npm
-export PATH=/usr/local/share/npm/bin:$PATH
-
 # mysql
 export PATH=/usr/local/mysql/bin:$PATH
-
-# Go
+# go
 export GOPATH=${HOME}/code/asapp/go
 export PATH=${PATH}:${GOPATH}/bin
 export PATH=${PATH}:/usr/local/go/bin
-# mkdir -p ${HOME}/code/GOPATH-global
-# if this doesn't work long term:
-# "setenv GOPATH $HOME/code/GOPATH-global" in /etc/launchd.conf
+# python
+export PYTHONPATH=${HOME}/code/asapp/py
+# js
+export NODE_PATH=${HOME}/code/asapp/js
+export PATH=/usr/local/share/npm/bin:$PATH
 
 # Mine
 export PATH=${PATH}:~/code/marcuswestin/dotfiles/bin
