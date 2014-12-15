@@ -1,6 +1,6 @@
 {
 	"auto_indent": true,
-	"font_size": 18.0,
+	"font_size": 16.0,
 	"ignored_packages":
 	[
 		"Vintage",
@@ -9,5 +9,6 @@
 	"indent_subsequent_lines": true,
 	"smart_indent": false,
 	"trim_automatic_white_space": false,
-	"use_simple_full_screen": true
+	"use_simple_full_screen": true,
+	"fmt_cmd": ["goimports"]
 }
