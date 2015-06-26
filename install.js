@@ -5,7 +5,7 @@ var fs = require('fs'),
 	home = process.argv[2]
 
 processDir('files-Home', home+'/.')
-// processDir('files-Sublime-User', home+'/Library/Application Support/Sublime Text 3/Packages/User/')
+processDir('files-Sublime-User', home+'/Library/Application Support/Sublime Text 3/Packages/User/')
 
 function processDir(dirname, linkPrefix) {
 	var files = fs.readdirSync(path.join(__dirname, dirname))
