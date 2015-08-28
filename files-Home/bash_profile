@@ -4,7 +4,7 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # ASAPP
 #######
 # Change this next line to wherever your ASAPP repo is/will be
-export ASAPP_REPO=${HOME}/code/ASAPP
+export ASAPP_REPO=${HOME}/code/asapp
 # awsm prompt
 PS1="\n\w λ "
 # brew
