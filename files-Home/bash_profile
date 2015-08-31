@@ -13,7 +13,6 @@ export PATH=${PATH}:~/code/marcuswestin/dotfiles/bin
 alias d="cd ~/code/dogo"
 alias i="cd ~/code/ivyq"
 alias p="cd ~/code/secrets/Pen\ and\ Paper"
-alias a="cd ~/code/asapp"
 alias glog="git log --format='%Cgreen%h%Creset %C(cyan)%an%Creset - %s' --graph"
 alias t="make test"
 alias saga="subl ~/Dropbox/Saga.md"
