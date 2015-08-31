@@ -1,35 +1,26 @@
+# Prompt
+PS1="\n\w λ "
+
+# Brew
+export PATH=/usr/local/bin:$PATH
+
 # MacPorts Installer addition on 2011-04-11_at_16:48:02: adding an appropriate PATH variable for use with MacPorts.
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-
-# ASAPP
-#######
-# Change this next line to wherever your ASAPP repo is/will be
-export ASAPP_REPO=${HOME}/code/ASAPP
-# awsm prompt
-PS1="\n\w λ "
-# brew
-export PATH=/usr/local/bin:$PATH
-# mysql
-export PATH=/usr/local/mysql/bin:$PATH
-# go
-export GOPATH=${ASAPP_REPO}/go
-export PATH=${PATH}:${GOPATH}/bin
-export PATH=${PATH}:/usr/local/go/bin
-# python
-export PYTHONPATH=${ASAPP_REPO}/py
-export PYLEARN2_DATA_PATH=${ASAPP_REPO}/data/pylearn2
-# js
-export NODE_PATH=${ASAPP_REPO}/js
-export PATH=/usr/local/share/npm/bin:$PATH
 
 # Mine
 ######
 export PATH=${PATH}:~/code/marcuswestin/dotfiles/bin
 alias d="cd ~/code/dogo"
 alias i="cd ~/code/ivyq"
-alias f="cd ~/code/dogo/src/go/src/github.com/marcuswestin/fun"
 alias p="cd ~/code/secrets/Pen\ and\ Paper"
 alias a="cd ~/code/asapp"
 alias glog="git log --format='%Cgreen%h%Creset %C(cyan)%an%Creset - %s' --graph"
 alias t="make test"
 alias saga="subl ~/Dropbox/Saga.md"
+
+# AllForm stuff
+alias allform="cd /Users/marcus/code/allform && source misc/source-allform-dev.sh"
+
+# ASAPP stuff
+alias asapp="cd /Users/marcus/code/asapp && source misc/source-asapp-dev.sh"
+alias a=asapp
