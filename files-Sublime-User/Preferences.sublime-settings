@@ -1,6 +1,6 @@
 {
 	"auto_indent": true,
-	"font_size": 16.0,
+	"color_scheme": "Packages/Theme - Afterglow/Afterglow.tmTheme",
 	"ignored_packages":
 	[
 		"Vintage",
@@ -8,6 +8,7 @@
 	],
 	"indent_subsequent_lines": true,
 	"smart_indent": false,
+	"theme": "Afterglow.sublime-theme",
 	"trim_automatic_white_space": false,
 	"use_simple_full_screen": true,
 	"fmt_cmd": ["goimports"]
