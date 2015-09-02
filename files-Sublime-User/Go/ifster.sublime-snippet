@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+if stdErr != nil {
+	${2:err = }errs.Wrap(stdErr, errs.Info{${1:}})
+	${3:return}
+}${0}
+]]></content>
+	<tabTrigger>ifster</tabTrigger>
+</snippet>
+
