@@ -18,9 +18,15 @@ alias t="make test"
 alias saga="subl ~/Dropbox/Saga.md"
 alias stack="subl ~/Dropbox/ASAPP/Text && subl ~/Dropbox/ASAPP/Text/STACK.txt"
 alias a=asapp
+alias s=stackack
+alias f=allform
 
 # AllForm stuff
 alias allform="cd /Users/marcus/code/allform && source misc/source-allform-dev.sh"
 
 # ASAPP stuff
 alias asapp="cd /Users/marcus/code/asapp && source misc/source-asapp-dev.sh"
+
+# StackACK stuff
+alias stackack="cd /Users/marcus/code/stackack && source misc/source-stackack-dev.sh"
+
