@@ -20,7 +20,7 @@ alias stack="subl ~/Dropbox/ASAPP/Text && subl ~/Dropbox/ASAPP/Text/STACK.txt"
 alias a=asapp
 alias s=stackack
 alias f=allform
-alias bell="echo *** BELL ***$'\a'"
+alias bell="echo $'\a' '*** BELL ***'"
 
 # AllForm stuff
 alias allform="cd /Users/marcus/code/allform && source misc/source-allform-dev.sh"
