@@ -23,11 +23,11 @@ alias f=allform
 alias bell="echo $'\a' '*** BELL ***'"
 
 # AllForm stuff
-alias allform="cd /Users/marcus/code/allform && source misc/source-allform-dev.sh"
+alias allform="cd /Users/marcus/code/allform && source misc/automate/source-dev.sh"
 
 # ASAPP stuff
 alias asapp="cd /Users/marcus/code/asapp && source misc/source-asapp-dev.sh"
 
-# StackACK stuff
-alias stackack="cd /Users/marcus/code/stackack && source misc/source-stackack-dev.sh"
+# StackAck stuff
+alias stackack="cd /Users/marcus/code/stackack && source misc/automate/source-dev.sh"
 
