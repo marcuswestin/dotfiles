@@ -4,11 +4,11 @@
 	[
 		"goimports"
 	],
-	"font_size": 12.0,
+	"font_size": 11.0,
 	"ignored_packages":
 	[
-		"Vintage",
-		"Makefile"
+		"Makefile",
+		"Vintage"
 	],
 	"indent_subsequent_lines": true,
 	"smart_indent": false,
