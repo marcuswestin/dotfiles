@@ -31,3 +31,5 @@ alias asapp="cd /Users/marcus/code/asapp && source misc/source-asapp-dev.sh"
 # StackAck stuff
 alias stackack="cd /Users/marcus/code/stackack && source misc/automate/source-dev.sh"
 
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
