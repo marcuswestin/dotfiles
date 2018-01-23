@@ -42,5 +42,25 @@ alias enter-shopzpop="cd /Users/marcus/code/shopzpop && source dev/_setup/source
 alias enter-projectname="cd /Users/marcus/code/boilerplate && source dev/_setup/source-dev.sh"
 
 # STACKACK
-alias enter-stackack="cd /Users/marcus/code/stackack && source dev/setup/setup-dev.sh"
 alias es=enter-stackack
+
+
+export ASAPP_ROOT=/Users/marcus/code/ASAPP
+        
+
+# ASAPP stuff
+alias asapp="cd /Users/marcus/code/ASAPP && source misc/source-asapp-dev.sh"
+      
+
+# XO
+alias enter-xo="cd /Users/marcus/code/xo && source dev/setup/source-dev.sh"
+alias xo=enter-xo
+
+# STACKACK
+alias enter-stackack="cd /Users/marcus/code/stackack && source dev/setup/setup-dev.sh"
+alias vicky-dev='eval $(stackack env dev --file /Users/marcus/code/stackack/example-stacks/vicky/Stackfile.yaml)'
+alias playground-dev='eval $(stackack env dev --file /Users/marcus/code/stackack/example-stacks/playground/Stackfile.yaml)'
+alias build='$STACKACK_ROOT/example-stacks/stackack/build_and_install.sh'
+alias ccc-dev='eval $(stackack env dev --file $STACKACK_ROOT/go/src/stackack/ccc/Stackfile.yaml)'
+alias ccc-aws='eval $(stackack env aws --file $STACKACK_ROOT/go/src/stackack/ccc/Stackfile.yaml)'
+alias ccc-test='$STACKACK_ROOT/go/src/stackack/ccc/test/run-all.sh'
