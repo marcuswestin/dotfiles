@@ -29,9 +29,6 @@ alias allform="cd /Users/marcus/code/allform && source misc/automate/source-dev.
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
-# ASAPP stuff
-alias asapp="cd /Users/marcus/code/asapp && source misc/source-asapp-dev.sh"
-  
 # AMZNMATE
 alias amznmate="cd /Users/marcus/code/amzn-mate && source scripts/dev/automate-dev-env/source-dev.sh"
 

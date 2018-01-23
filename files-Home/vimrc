@@ -6,7 +6,7 @@
 " COLOR SCHEMES "
 """""""""""""""""
 syntax on
-colorscheme wombat
+"colorscheme wombat
 "set background=dark
 "colorscheme solarized
 
