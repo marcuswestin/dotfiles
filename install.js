@@ -13,27 +13,42 @@ function processDir(dirname, linkPrefix) {
 		if (file[0] == '.') { continue }
 		var linkPath = linkPrefix + file,
 			linkPathHuman = linkPath.replace(home, '~').replace(/ /g, '\\ '),
-			filePath = path.join(dirname, file),
+			filePath = path.join(process.cwd(), dirname, file),
 			fileStat = fs.statSync(filePath),
 			linkStat
 		
-		console.log('\t', linkPathHuman)
+		console.log('\tLink: ', linkPathHuman, '<-', filePath)
 		
 		try {
-			var linkStat = fs.statSync(linkPath) // throws if nothing there
+			linkStat = fs.statSync(linkPath) // throws if nothing there
 		} catch(e) {}
 
-		if (linkStat) {
-			if (linkStat.uid == fileStat.uid) {
-				try {
-					fs.unlinkSync(linkPath)
-				} catch(e) {}
-			} else {
-				console.log(linkPath, 'already exists! Please remove it.')
-				process.exit(-1)
+		if (fileStat.isDirectory()) { // Process and link directory
+			if (linkStat && !linkStat.isSymbolicLink()) {
+				try { fs.unlinkSync(linkPath) } catch(e) {}
 			}
-		}
+			fs.symlinkSync(filePath, linkPath)
+			continue
 		
-		fs.linkSync(filePath, linkPath)
+		} else {
+			// Process and link file
+			if (linkStat) {
+				if (linkStat.isDirectory()) {
+					continue
+				}
+				
+				if (linkStat.uid == fileStat.uid) {
+					try {
+						fs.unlinkSync(linkPath)
+					} catch(e) {}
+				} else {
+					console.log(linkPathHuman, 'already exists! Please remove it.')
+					process.exit(-1)
+				}
+			}
+			
+			try { fs.unlinkSync(linkPath) } catch(e) {}
+			fs.linkSync(filePath, linkPath)
+		}		
 	}
 }
