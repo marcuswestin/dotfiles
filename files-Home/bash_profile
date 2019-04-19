@@ -64,3 +64,7 @@ alias build='$STACKACK_ROOT/example-stacks/stackack/build_and_install.sh'
 alias ccc-dev='eval $(stackack env dev --file $STACKACK_ROOT/go/src/stackack/ccc/Stackfile.yaml)'
 alias ccc-aws='eval $(stackack env aws --file $STACKACK_ROOT/go/src/stackack/ccc/Stackfile.yaml)'
 alias ccc-test='$STACKACK_ROOT/go/src/stackack/ccc/test/run-all.sh'
+
+# WORDFLOWER
+alias enter-wordflower="cd /Users/marcus/Dropbox/code/wordflower && source dev/setup/source-dev.sh"
+alias ew="enter-wordflower"
