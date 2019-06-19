@@ -66,5 +66,5 @@ alias ccc-aws='eval $(stackack env aws --file $STACKACK_ROOT/go/src/stackack/ccc
 alias ccc-test='$STACKACK_ROOT/go/src/stackack/ccc/test/run-all.sh'
 
 # WORDFLOWER
-alias enter-wordflower="cd /Users/marcus/Dropbox/code/wordflower && source dev/setup/source-dev.sh"
+alias enter-wordflower="cd /Users/marcus/code/wordflower && source dev/setup/source-dev.sh"
 alias ew="enter-wordflower"
