@@ -44,6 +44,10 @@ open https://github.com/marcuswestin/dotfiles/blob/master/setup-new-machine.txt
 	- Search: Computer Name
 		- Edit to: "marcus-mbp"
 
+- Fix Dock
+	- Remove ALL apps
+	- Right click -> Turn Hiding On
+
 - Install programs
 	- Sublime Text 3: Google, download, move to Applications
 	- iTerm 2: Google, download, move to Applications
