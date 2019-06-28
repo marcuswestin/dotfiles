@@ -1,0 +1,99 @@
+Setup new MacOS machine
+=======================
+
+# Start hereL:
+open https://github.com/marcuswestin/dotfiles/blob/master/setup-new-machine.txt
+
+- MacOS Beta (if applicable)
+	- Install developer profile: https://developer.apple.com/download/
+	- Upgrade MacOS
+		- System Preferences
+		- Download and Install
+
+- Xcode
+	- Download from App Store
+	- Install and Run
+
+- Fix Settings
+	- Trackpad
+		- Tab: Point & Click
+			- Tap to click: Checked
+			- Click: Light
+			- Tracking Speed: Fastest
+	- Accessibility
+		- Mouse & Trackpad > Trackpad options
+			- Scrolling Speed: Fastest
+			- Enable Dragging: Three finger drag
+	- Keyboard
+		- Tab: Keyboard
+			- Key Repeat: Fast
+			- Delay Until Repeat: Short
+			- Modifier Keys… (button): Caps Key -> Control
+		- Tab: Shortcuts
+			- Input Sources > Select The Next in Input menu: Checked
+			- Full Keyboard Access (bottom radios): All Controls
+		- Tab: Input Sources
+			- Add: Swedish
+	- Hot Corners
+		- Top: Desktop, Desktop
+		- Bottom: Sleep, Sleep
+	- Security
+		- Require password: 5 Seconds
+	- Expose
+		- Disable Keyboard shortcuts for ctrl+up/down (Mission Control & Application windows)
+	- Search: Computer Name
+		- Edit to: "marcus-mbp"
+
+- Install programs
+	- Sublime Text 3: Google, download, move to Applications
+	- iTerm 2: Google, download, move to Applications
+
+- iTerm
+	- Tab: General
+		- Right column, Window; Native full screen window: Unchecked
+
+- Terminal
+    # Command line tools
+    xcode-select --install
+    
+    # Install Brew
+    ruby -e "$(curl https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    brew install node # needed by dotflies
+
+    # Setup
+    mkdir -p ~/code
+    ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl && subl
+    
+    # SSH
+    mkdir -p ~/.ssh && cd ~/.ssh
+    ssh-keygen -t rsa -C "marcus.westin@gmail.com" # (enter, enter, enter, no passw)
+    ssh-add id_rsa
+    
+    # Git
+    git config --global user.name "Marcus Westin"
+    git config --global user.email "marcus.westin@gmail.com"
+    git config --global core.excludesfile ~/.gitignore
+    git config --global push.default simple
+
+    # Dotfiles
+    cd ~/code
+    git clone https://github.com/marcuswestin/dotfiles.git
+    cd ~/code/dotfiles && make
+    source ~/.bash_profile
+
+    # Make access token for push
+    open https://github.com/settings/tokens # Select "repo" permission, create token
+    echo "\n" >> README.md && git add README.md && git commit -m 'bump' && git push # marcuswestin, and token
+
+    # git*
+    cd ~/code
+    git clone https://github.com/marcuswestin/git-star.git
+    cd ~/code/git-star
+    ./install_local.sh
+
+
+-----------
+
+TODO
+	- 1Password
+	- Android Studio
