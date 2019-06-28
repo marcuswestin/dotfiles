@@ -4,6 +4,16 @@ Setup new MacOS machine
 # Start hereL:
 open https://github.com/marcuswestin/dotfiles/blob/master/setup-new-machine.txt
 
+- Desktop
+	- Right click
+		- Use stacks: Checked
+		- Show view options:
+			- Sort By: Date Created
+			- Icon size: 72x72
+			- Text size: 13
+			- Label position: Right
+			- Show item info: Checked
+
 - MacOS Beta (if applicable)
 	- Install developer profile: https://developer.apple.com/download/
 	- Upgrade MacOS
