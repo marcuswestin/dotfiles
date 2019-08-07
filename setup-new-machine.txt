@@ -1,7 +1,7 @@
 Setup new MacOS machine
 =======================
 
-# Start hereL:
+# Start here:
 open https://github.com/marcuswestin/dotfiles/blob/master/setup-new-machine.txt
 
 - Desktop
