@@ -8,7 +8,6 @@
 	],
 	"indent_subsequent_lines": true,
 	"smart_indent": false,
-	"theme": "Afterglow.sublime-theme",
 	"trim_automatic_white_space": false,
 	"use_simple_full_screen": true
 }
