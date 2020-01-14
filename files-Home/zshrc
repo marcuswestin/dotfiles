@@ -1,0 +1,13 @@
+# Prompt
+PROMPT='%~ λ '
+
+# Common aliases
+alias glog="git log --format='%Cgreen%h%Creset %C(cyan)%an%Creset - %s' --graph"
+alias t="make test"
+alias m="make"
+alias bell="echo $'\a' '*** BELL ***'"
+
+
+# WORDFLOWER
+alias enter-wordflower="cd /Users/marcus/code/wordflower && source dev/setup/source-dev.sh"
+alias ew="enter-wordflower"
