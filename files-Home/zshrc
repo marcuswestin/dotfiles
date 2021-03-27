@@ -9,5 +9,18 @@ alias bell="echo $'\a' '*** BELL ***'"
 
 
 # WORDFLOWER
-alias enter-wordflower="cd /Users/marcus/code/wordflower && source dev/setup/source-dev.sh"
+alias enter-wordflower="cd /Users/marcuswestin/code/wordflower && source dev/setup/source-dev.sh"
 alias ew="enter-wordflower"
+
+alias enter-stackack="cd /Users/marcuswestin/code/stackack && source dev/setup/setup-dev.sh"
+alias es="enter-stackack"
+
+alias enter-aldyn="cd /Users/marcuswestin/code/aldyn"
+alias ea="enter-aldyn"
+
+# React Native Android development (from https://reactnative.dev/docs/environment-setup)
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
