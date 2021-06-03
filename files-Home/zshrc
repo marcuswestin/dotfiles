@@ -17,6 +17,8 @@ alias es="enter-stackack"
 
 alias enter-aldyn="cd /Users/marcuswestin/code/aldyn"
 alias ea="enter-aldyn"
+
+alias enter-podcasts="cd /Users/marcuswestin/code/podcasts"
 alias ep="enter-podcasts"
 
 # React Native Android development (from https://reactnative.dev/docs/environment-setup)
